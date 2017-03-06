@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590082271E6DA1EE00C88970 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590082251E6DA1EE00C88970 /* Realm.framework */; };
+		590082281E6DA1EE00C88970 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590082251E6DA1EE00C88970 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		590082291E6DA1EE00C88970 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590082261E6DA1EE00C88970 /* RealmSwift.framework */; };
+		5900822A1E6DA1EE00C88970 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590082261E6DA1EE00C88970 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5900822E1E6DA2BF00C88970 /* StatsInBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900822D1E6DA2BF00C88970 /* StatsInBase.swift */; };
+		590082341E6DAAB500C88970 /* MemberImagesCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590082331E6DAAB500C88970 /* MemberImagesCatalog.xcassets */; };
+		5905378F1E4E23EA0063CCCA /* SecondPageStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905378E1E4E23EA0063CCCA /* SecondPageStatsViewController.swift */; };
+		59277D031E56064200BCA70F /* HitStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59277D021E56064200BCA70F /* HitStackView.swift */; };
+		5951748F1E492DAE00399D8F /* Guild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951748E1E492DAE00399D8F /* Guild.swift */; };
+		595174911E492DF800399D8F /* Arcanists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595174901E492DF800399D8F /* Arcanists.swift */; };
+		595174931E492E0700399D8F /* Neverborn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595174921E492E0700399D8F /* Neverborn.swift */; };
+		595174951E492E1700399D8F /* TenThunders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595174941E492E1700399D8F /* TenThunders.swift */; };
+		595174971E492E2B00399D8F /* Gremlins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595174961E492E2B00399D8F /* Gremlins.swift */; };
+		595174991E492E3700399D8F /* Outcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595174981E492E3700399D8F /* Outcasts.swift */; };
+		5957E5CF1E4BBB400032CCB2 /* FirstPageStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957E5CE1E4BBB400032CCB2 /* FirstPageStatsViewController.swift */; };
+		595DDED41E6DBDA200154238 /* DownloadFromRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595DDED31E6DBDA200154238 /* DownloadFromRealm.swift */; };
+		595DDED61E6DC11C00154238 /* AddSamplesToRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595DDED51E6DC11C00154238 /* AddSamplesToRealm.swift */; };
+		59757A7E1DD22E8F0073CCD6 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89611DCFDFA400720B49 /* Sound.swift */; };
+		59757A881DD2A7070073CCD6 /* blast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A801DD2A7070073CCD6 /* blast.m4a */; };
+		59757A891DD2A7070073CCD6 /* cast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A811DD2A7070073CCD6 /* cast.m4a */; };
+		59757A8A1DD2A7070073CCD6 /* fail.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A821DD2A7070073CCD6 /* fail.m4a */; };
+		59757A8B1DD2A7070073CCD6 /* hit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A831DD2A7070073CCD6 /* hit.m4a */; };
+		59757A8C1DD2A7070073CCD6 /* melee.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A841DD2A7070073CCD6 /* melee.m4a */; };
+		59757A8D1DD2A7070073CCD6 /* shoot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A851DD2A7070073CCD6 /* shoot.m4a */; };
+		59757A8E1DD2A7070073CCD6 /* summon.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A861DD2A7070073CCD6 /* summon.m4a */; };
+		59757A8F1DD2A7070073CCD6 /* walk.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59757A871DD2A7070073CCD6 /* walk.m4a */; };
+		59B0F85A1E4A0C8300600588 /* StatCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0F8591E4A0C8300600588 /* StatCardViewController.swift */; };
+		59B936B51DD717E3006065B4 /* AddingMembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B936B41DD717E3006065B4 /* AddingMembersTableViewController.swift */; };
+		59B936B71DD72B45006065B4 /* MembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B936B61DD72B45006065B4 /* MembersTableViewCell.swift */; };
+		59BB89401DCFC84800720B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB893F1DCFC84800720B49 /* AppDelegate.swift */; };
+		59BB89421DCFC84800720B49 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89411DCFC84800720B49 /* CardViewController.swift */; };
+		59BB89451DCFC84800720B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BB89431DCFC84800720B49 /* Main.storyboard */; };
+		59BB89471DCFC84800720B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BB89461DCFC84800720B49 /* Assets.xcassets */; };
+		59BB894A1DCFC84800720B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BB89481DCFC84800720B49 /* LaunchScreen.storyboard */; };
+		59BB89551DCFC84800720B49 /* MaliDeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89541DCFC84800720B49 /* MaliDeckTests.swift */; };
+		59BB89621DCFDFA400720B49 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89611DCFDFA400720B49 /* Sound.swift */; };
+		59BB89641DCFF10E00720B49 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89631DCFF10E00720B49 /* SoundTableViewCell.swift */; };
+		59BB89661DCFF13800720B49 /* SoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89651DCFF13800720B49 /* SoundTableViewController.swift */; };
+		59E6979F1DD52F7700991A88 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6979E1DD52F7700991A88 /* Stats.swift */; };
+		59E697A01DD52F7700991A88 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6979E1DD52F7700991A88 /* Stats.swift */; };
+		59FEFC1F1DDA6EFA003933F7 /* BandMembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEFC1E1DDA6EFA003933F7 /* BandMembersTableViewCell.swift */; };
+		59FEFC241DDA77D9003933F7 /* Resurrectionists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEFC231DDA77D9003933F7 /* Resurrectionists.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59BB89511DCFC84800720B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59BB89341DCFC84700720B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59BB893B1DCFC84800720B49;
+			remoteInfo = MaliDeck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5900822B1E6DA1EE00C88970 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5900822A1E6DA1EE00C88970 /* RealmSwift.framework in Embed Frameworks */,
+				590082281E6DA1EE00C88970 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		590082251E6DA1EE00C88970 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		590082261E6DA1EE00C88970 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		5900822D1E6DA2BF00C88970 /* StatsInBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInBase.swift; sourceTree = "<group>"; };
+		590082331E6DAAB500C88970 /* MemberImagesCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MemberImagesCatalog.xcassets; sourceTree = "<group>"; };
+		5905378E1E4E23EA0063CCCA /* SecondPageStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageStatsViewController.swift; sourceTree = "<group>"; };
+		59277D021E56064200BCA70F /* HitStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitStackView.swift; sourceTree = "<group>"; };
+		5939F8361E6A22450030D8B0 /* MaliDeck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MaliDeck.entitlements; sourceTree = "<group>"; };
+		5951748E1E492DAE00399D8F /* Guild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guild.swift; sourceTree = "<group>"; };
+		595174901E492DF800399D8F /* Arcanists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arcanists.swift; sourceTree = "<group>"; };
+		595174921E492E0700399D8F /* Neverborn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neverborn.swift; sourceTree = "<group>"; };
+		595174941E492E1700399D8F /* TenThunders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenThunders.swift; sourceTree = "<group>"; };
+		595174961E492E2B00399D8F /* Gremlins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gremlins.swift; sourceTree = "<group>"; };
+		595174981E492E3700399D8F /* Outcasts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outcasts.swift; sourceTree = "<group>"; };
+		5957E5CE1E4BBB400032CCB2 /* FirstPageStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageStatsViewController.swift; sourceTree = "<group>"; };
+		595DDED31E6DBDA200154238 /* DownloadFromRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadFromRealm.swift; sourceTree = "<group>"; };
+		595DDED51E6DC11C00154238 /* AddSamplesToRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSamplesToRealm.swift; sourceTree = "<group>"; };
+		59757A801DD2A7070073CCD6 /* blast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = blast.m4a; sourceTree = "<group>"; };
+		59757A811DD2A7070073CCD6 /* cast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = cast.m4a; sourceTree = "<group>"; };
+		59757A821DD2A7070073CCD6 /* fail.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fail.m4a; sourceTree = "<group>"; };
+		59757A831DD2A7070073CCD6 /* hit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.m4a; sourceTree = "<group>"; };
+		59757A841DD2A7070073CCD6 /* melee.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = melee.m4a; sourceTree = "<group>"; };
+		59757A851DD2A7070073CCD6 /* shoot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shoot.m4a; sourceTree = "<group>"; };
+		59757A861DD2A7070073CCD6 /* summon.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = summon.m4a; sourceTree = "<group>"; };
+		59757A871DD2A7070073CCD6 /* walk.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = walk.m4a; sourceTree = "<group>"; };
+		59B0F8591E4A0C8300600588 /* StatCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatCardViewController.swift; sourceTree = "<group>"; };
+		59B936B41DD717E3006065B4 /* AddingMembersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingMembersTableViewController.swift; sourceTree = "<group>"; };
+		59B936B61DD72B45006065B4 /* MembersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersTableViewCell.swift; sourceTree = "<group>"; };
+		59BB893C1DCFC84800720B49 /* MaliDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaliDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BB893F1DCFC84800720B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59BB89411DCFC84800720B49 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		59BB89441DCFC84800720B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59BB89461DCFC84800720B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59BB89491DCFC84800720B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59BB894B1DCFC84800720B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BB89501DCFC84800720B49 /* MaliDeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaliDeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BB89541DCFC84800720B49 /* MaliDeckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaliDeckTests.swift; sourceTree = "<group>"; };
+		59BB89561DCFC84800720B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BB89611DCFDFA400720B49 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		59BB89631DCFF10E00720B49 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		59BB89651DCFF13800720B49 /* SoundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewController.swift; sourceTree = "<group>"; };
+		59E6979E1DD52F7700991A88 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		59FEFC1E1DDA6EFA003933F7 /* BandMembersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandMembersTableViewCell.swift; sourceTree = "<group>"; };
+		59FEFC231DDA77D9003933F7 /* Resurrectionists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resurrectionists.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59BB89391DCFC84800720B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590082291E6DA1EE00C88970 /* RealmSwift.framework in Frameworks */,
+				590082271E6DA1EE00C88970 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BB894D1DCFC84800720B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5939F8331E6A22450030D8B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59757A7F1DD2A6DD0073CCD6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				59757A801DD2A7070073CCD6 /* blast.m4a */,
+				59757A811DD2A7070073CCD6 /* cast.m4a */,
+				59757A821DD2A7070073CCD6 /* fail.m4a */,
+				59757A831DD2A7070073CCD6 /* hit.m4a */,
+				59757A841DD2A7070073CCD6 /* melee.m4a */,
+				59757A851DD2A7070073CCD6 /* shoot.m4a */,
+				59757A861DD2A7070073CCD6 /* summon.m4a */,
+				59757A871DD2A7070073CCD6 /* walk.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		59BB89331DCFC84700720B49 = {
+			isa = PBXGroup;
+			children = (
+				590082251E6DA1EE00C88970 /* Realm.framework */,
+				590082261E6DA1EE00C88970 /* RealmSwift.framework */,
+				59BB893E1DCFC84800720B49 /* MaliDeck */,
+				59BB89531DCFC84800720B49 /* MaliDeckTests */,
+				59BB893D1DCFC84800720B49 /* Products */,
+				5939F8331E6A22450030D8B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59BB893D1DCFC84800720B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59BB893C1DCFC84800720B49 /* MaliDeck.app */,
+				59BB89501DCFC84800720B49 /* MaliDeckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59BB893E1DCFC84800720B49 /* MaliDeck */ = {
+			isa = PBXGroup;
+			children = (
+				5939F8361E6A22450030D8B0 /* MaliDeck.entitlements */,
+				59BB893F1DCFC84800720B49 /* AppDelegate.swift */,
+				59BB89431DCFC84800720B49 /* Main.storyboard */,
+				59E6979D1DD52F0E00991A88 /* Stats views */,
+				59E6979C1DD52DEC00991A88 /* sound views */,
+				59BB89461DCFC84800720B49 /* Assets.xcassets */,
+				590082331E6DAAB500C88970 /* MemberImagesCatalog.xcassets */,
+				59BB89481DCFC84800720B49 /* LaunchScreen.storyboard */,
+				59BB894B1DCFC84800720B49 /* Info.plist */,
+			);
+			path = MaliDeck;
+			sourceTree = "<group>";
+		};
+		59BB89531DCFC84800720B49 /* MaliDeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				59BB89541DCFC84800720B49 /* MaliDeckTests.swift */,
+				59BB89561DCFC84800720B49 /* Info.plist */,
+			);
+			path = MaliDeckTests;
+			sourceTree = "<group>";
+		};
+		59E6979C1DD52DEC00991A88 /* sound views */ = {
+			isa = PBXGroup;
+			children = (
+				59BB89651DCFF13800720B49 /* SoundTableViewController.swift */,
+				59BB89631DCFF10E00720B49 /* SoundTableViewCell.swift */,
+				59BB89611DCFDFA400720B49 /* Sound.swift */,
+				59757A7F1DD2A6DD0073CCD6 /* Sounds */,
+			);
+			name = "sound views";
+			sourceTree = "<group>";
+		};
+		59E6979D1DD52F0E00991A88 /* Stats views */ = {
+			isa = PBXGroup;
+			children = (
+				59FEFC221DDA77B1003933F7 /* Data */,
+				59BB89411DCFC84800720B49 /* CardViewController.swift */,
+				59B0F8591E4A0C8300600588 /* StatCardViewController.swift */,
+				59FEFC1E1DDA6EFA003933F7 /* BandMembersTableViewCell.swift */,
+				59E6979E1DD52F7700991A88 /* Stats.swift */,
+				5900822D1E6DA2BF00C88970 /* StatsInBase.swift */,
+				59B936B41DD717E3006065B4 /* AddingMembersTableViewController.swift */,
+				59B936B61DD72B45006065B4 /* MembersTableViewCell.swift */,
+				5957E5CE1E4BBB400032CCB2 /* FirstPageStatsViewController.swift */,
+				59277D021E56064200BCA70F /* HitStackView.swift */,
+				5905378E1E4E23EA0063CCCA /* SecondPageStatsViewController.swift */,
+			);
+			name = "Stats views";
+			sourceTree = "<group>";
+		};
+		59FEFC201DDA777B003933F7 /* Factions */ = {
+			isa = PBXGroup;
+			children = (
+				595DDED31E6DBDA200154238 /* DownloadFromRealm.swift */,
+				595DDED51E6DC11C00154238 /* AddSamplesToRealm.swift */,
+				5951748E1E492DAE00399D8F /* Guild.swift */,
+				59FEFC231DDA77D9003933F7 /* Resurrectionists.swift */,
+				595174901E492DF800399D8F /* Arcanists.swift */,
+				595174921E492E0700399D8F /* Neverborn.swift */,
+				595174941E492E1700399D8F /* TenThunders.swift */,
+				595174961E492E2B00399D8F /* Gremlins.swift */,
+				595174981E492E3700399D8F /* Outcasts.swift */,
+			);
+			name = Factions;
+			sourceTree = "<group>";
+		};
+		59FEFC221DDA77B1003933F7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				59FEFC201DDA777B003933F7 /* Factions */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59BB893B1DCFC84800720B49 /* MaliDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59BB89591DCFC84800720B49 /* Build configuration list for PBXNativeTarget "MaliDeck" */;
+			buildPhases = (
+				59BB89381DCFC84800720B49 /* Sources */,
+				59BB89391DCFC84800720B49 /* Frameworks */,
+				59BB893A1DCFC84800720B49 /* Resources */,
+				5900822B1E6DA1EE00C88970 /* Embed Frameworks */,
+				5900822C1E6DA26A00C88970 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaliDeck;
+			productName = MaliDeck;
+			productReference = 59BB893C1DCFC84800720B49 /* MaliDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59BB894F1DCFC84800720B49 /* MaliDeckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59BB895C1DCFC84800720B49 /* Build configuration list for PBXNativeTarget "MaliDeckTests" */;
+			buildPhases = (
+				59BB894C1DCFC84800720B49 /* Sources */,
+				59BB894D1DCFC84800720B49 /* Frameworks */,
+				59BB894E1DCFC84800720B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59BB89521DCFC84800720B49 /* PBXTargetDependency */,
+			);
+			name = MaliDeckTests;
+			productName = MaliDeckTests;
+			productReference = 59BB89501DCFC84800720B49 /* MaliDeckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59BB89341DCFC84700720B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = passt0r;
+				TargetAttributes = {
+					59BB893B1DCFC84800720B49 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					59BB894F1DCFC84800720B49 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59BB893B1DCFC84800720B49;
+					};
+				};
+			};
+			buildConfigurationList = 59BB89371DCFC84700720B49 /* Build configuration list for PBXProject "MaliDeck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59BB89331DCFC84700720B49;
+			productRefGroup = 59BB893D1DCFC84800720B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59BB893B1DCFC84800720B49 /* MaliDeck */,
+				59BB894F1DCFC84800720B49 /* MaliDeckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59BB893A1DCFC84800720B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BB894A1DCFC84800720B49 /* LaunchScreen.storyboard in Resources */,
+				590082341E6DAAB500C88970 /* MemberImagesCatalog.xcassets in Resources */,
+				59757A8D1DD2A7070073CCD6 /* shoot.m4a in Resources */,
+				59757A8C1DD2A7070073CCD6 /* melee.m4a in Resources */,
+				59757A8B1DD2A7070073CCD6 /* hit.m4a in Resources */,
+				59BB89471DCFC84800720B49 /* Assets.xcassets in Resources */,
+				59BB89451DCFC84800720B49 /* Main.storyboard in Resources */,
+				59757A891DD2A7070073CCD6 /* cast.m4a in Resources */,
+				59757A8E1DD2A7070073CCD6 /* summon.m4a in Resources */,
+				59757A8A1DD2A7070073CCD6 /* fail.m4a in Resources */,
+				59757A8F1DD2A7070073CCD6 /* walk.m4a in Resources */,
+				59757A881DD2A7070073CCD6 /* blast.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BB894E1DCFC84800720B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5900822C1E6DA26A00C88970 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59BB89381DCFC84800720B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5905378F1E4E23EA0063CCCA /* SecondPageStatsViewController.swift in Sources */,
+				5957E5CF1E4BBB400032CCB2 /* FirstPageStatsViewController.swift in Sources */,
+				59BB89421DCFC84800720B49 /* CardViewController.swift in Sources */,
+				59FEFC241DDA77D9003933F7 /* Resurrectionists.swift in Sources */,
+				595174931E492E0700399D8F /* Neverborn.swift in Sources */,
+				59E6979F1DD52F7700991A88 /* Stats.swift in Sources */,
+				59BB89401DCFC84800720B49 /* AppDelegate.swift in Sources */,
+				59FEFC1F1DDA6EFA003933F7 /* BandMembersTableViewCell.swift in Sources */,
+				59B936B71DD72B45006065B4 /* MembersTableViewCell.swift in Sources */,
+				59BB89621DCFDFA400720B49 /* Sound.swift in Sources */,
+				595174951E492E1700399D8F /* TenThunders.swift in Sources */,
+				59BB89641DCFF10E00720B49 /* SoundTableViewCell.swift in Sources */,
+				595174971E492E2B00399D8F /* Gremlins.swift in Sources */,
+				595DDED61E6DC11C00154238 /* AddSamplesToRealm.swift in Sources */,
+				5900822E1E6DA2BF00C88970 /* StatsInBase.swift in Sources */,
+				59BB89661DCFF13800720B49 /* SoundTableViewController.swift in Sources */,
+				59B0F85A1E4A0C8300600588 /* StatCardViewController.swift in Sources */,
+				59B936B51DD717E3006065B4 /* AddingMembersTableViewController.swift in Sources */,
+				595DDED41E6DBDA200154238 /* DownloadFromRealm.swift in Sources */,
+				595174911E492DF800399D8F /* Arcanists.swift in Sources */,
+				5951748F1E492DAE00399D8F /* Guild.swift in Sources */,
+				595174991E492E3700399D8F /* Outcasts.swift in Sources */,
+				59277D031E56064200BCA70F /* HitStackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BB894C1DCFC84800720B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59BB89551DCFC84800720B49 /* MaliDeckTests.swift in Sources */,
+				59E697A01DD52F7700991A88 /* Stats.swift in Sources */,
+				59757A7E1DD22E8F0073CCD6 /* Sound.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59BB89521DCFC84800720B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59BB893B1DCFC84800720B49 /* MaliDeck */;
+			targetProxy = 59BB89511DCFC84800720B49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59BB89431DCFC84800720B49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59BB89441DCFC84800720B49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59BB89481DCFC84800720B49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59BB89491DCFC84800720B49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59BB89571DCFC84800720B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59BB89581DCFC84800720B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59BB895A1DCFC84800720B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MaliDeck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.MaliDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		59BB895B1DCFC84800720B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MaliDeck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.MaliDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		59BB895D1DCFC84800720B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = RealmSwift.framework;
+				INFOPLIST_FILE = MaliDeckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.MaliDeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaliDeck.app/MaliDeck";
+			};
+			name = Debug;
+		};
+		59BB895E1DCFC84800720B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = RealmSwift.framework;
+				INFOPLIST_FILE = MaliDeckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.MaliDeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaliDeck.app/MaliDeck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59BB89371DCFC84700720B49 /* Build configuration list for PBXProject "MaliDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BB89571DCFC84800720B49 /* Debug */,
+				59BB89581DCFC84800720B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59BB89591DCFC84800720B49 /* Build configuration list for PBXNativeTarget "MaliDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BB895A1DCFC84800720B49 /* Debug */,
+				59BB895B1DCFC84800720B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59BB895C1DCFC84800720B49 /* Build configuration list for PBXNativeTarget "MaliDeckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BB895D1DCFC84800720B49 /* Debug */,
+				59BB895E1DCFC84800720B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59BB89341DCFC84700720B49 /* Project object */;
+}
