@@ -13,7 +13,19 @@ import RealmSwift
 func prepareDownload(fraction: String) -> [Stats] {
     
     var newMembers = [Stats]()
-    let realm = try! Realm()
+    
+    let realmParth = Bundle.main.path(forResource: "default 3", ofType: "realm")
+    
+    var realmConfig = Realm.Configuration()
+    if let realmParth = realmParth {
+        realmConfig.fileURL = URL(fileURLWithPath: realmParth)
+    } else {
+        fatalError("Can't read data from default realm")
+    }
+    realmConfig.readOnly = true
+    
+    
+    let realm = try! Realm(configuration: realmConfig)
     
     let mastersInBase = realm.objects(MasterInBase.self).filter("fraction = '\(fraction)'")
     let membersInBase = realm.objects(StatsInBase.self).filter("fraction = '\(fraction)'")

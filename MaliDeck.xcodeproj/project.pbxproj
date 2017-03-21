@@ -47,6 +47,7 @@
 		59BB89661DCFF13800720B49 /* SoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB89651DCFF13800720B49 /* SoundTableViewController.swift */; };
 		59E6979F1DD52F7700991A88 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6979E1DD52F7700991A88 /* Stats.swift */; };
 		59E697A01DD52F7700991A88 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6979E1DD52F7700991A88 /* Stats.swift */; };
+		59F4B1221E8174A50031D9A4 /* default 3.realm in Resources */ = {isa = PBXBuildFile; fileRef = 59F4B1211E8174650031D9A4 /* default 3.realm */; };
 		59FEFC1F1DDA6EFA003933F7 /* BandMembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEFC1E1DDA6EFA003933F7 /* BandMembersTableViewCell.swift */; };
 		59FEFC241DDA77D9003933F7 /* Resurrectionists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FEFC231DDA77D9003933F7 /* Resurrectionists.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		59BB89631DCFF10E00720B49 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
 		59BB89651DCFF13800720B49 /* SoundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTableViewController.swift; sourceTree = "<group>"; };
 		59E6979E1DD52F7700991A88 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		59F4B1211E8174650031D9A4 /* default 3.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "default 3.realm"; sourceTree = "<group>"; };
 		59FEFC1E1DDA6EFA003933F7 /* BandMembersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandMembersTableViewCell.swift; sourceTree = "<group>"; };
 		59FEFC231DDA77D9003933F7 /* Resurrectionists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resurrectionists.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +260,7 @@
 		59FEFC221DDA77B1003933F7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				59F4B1211E8174650031D9A4 /* default 3.realm */,
 				59FEFC201DDA777B003933F7 /* Factions */,
 			);
 			name = Data;
@@ -353,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F4B1221E8174A50031D9A4 /* default 3.realm in Resources */,
 				59BB894A1DCFC84800720B49 /* LaunchScreen.storyboard in Resources */,
 				590082341E6DAAB500C88970 /* MemberImagesCatalog.xcassets in Resources */,
 				59757A8D1DD2A7070073CCD6 /* shoot.m4a in Resources */,
